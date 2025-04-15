@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Đồ Họa - TechComponents</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/baitapnhom.css">
+    <link rel="stylesheet" href="css/products.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div id="waper">
+        <div id="header">
+            <nav class="thanhmenu">
+                <div class="thanhtren">
+                    <a id="logo" href="baitapnhom.html">
+                        <img src="images/1.jpg" alt="TechComponents Logo">
+                    </a>
+                    <input type="text" id="thanhtimkiem" placeholder="Tìm kiếm linh kiện...">
+                    <div class="tra_cuu">
+                        <a href="#news"><i class="fas fa-newspaper"></i> Tin tức</a>
+                        <a href="checkout.html"><i class="fas fa-box-open"></i> Thanh toán</a>
+                        <a href="#about"><i class="fas fa-info-circle"></i> Giới thiệu</a>
+                    </div>
+                    <div class="dangnhap">
+                        <a href="cart.html"><button><i class="fas fa-shopping-cart"></i> Giỏ hàng</button></a>
+                    </div>
+                    <div class="dangnhap">
+                        <a href="login.html"><button><i class="fas fa-user"></i> Đăng Nhập</button></a>
+                    </div>
+                </div>
+                <ul id="main_menu">
+                    <li><a href="processors.html">Bộ Vi Xử Lý <i class="fas fa-microchip"></i></a></li>
+                    <li><a href="graphics.html">Card Đồ Họa <i class="fas fa-desktop"></i></a></li>
+                    <li><a href="memory.html">Bộ Nhớ RAM <i class="fas fa-memory"></i></a></li>
+                    <li><a href="storage.html">Ổ Cứng <i class="fas fa-hdd"></i></a></li>
+                    <li><a href="motherboards.html">Bo Mạch Chủ <i class="fas fa-server"></i></a></li>
+                    <li><a href="power-supply.html">Nguồn Máy Tính <i class="fas fa-plug"></i></a></li>
+                    <li><a href="cases.html">Vỏ Case <i class="fas fa-box"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="products-container">
+            <div class="category-banner">
+                <div class="banner-content">
+                    <h1>Graphics Cards</h1>
+                    <p>Power up your visual experience</p>
+                </div>
+            </div>
+
+            <div class="product-grid">
+    <div class="product-card" data-brand="nvidia">
+        <div class="tech-badges">
+            <div class="badge" data-memory="24GB">24GB GDDR6X</div>
+            <div class="badge" data-power="450W">450W TGP</div>
+        </div>
+        <div class="product-image">
+            <img src="gpu1.jpg" alt="NVIDIA RTX 4090">
+        </div>
+        <div class="product-info">
+            <h3>NVIDIA GeForce RTX 4090</h3>
+            <div class="product-price">$1,599.99</div>
+            <ul class="specs-list">
+                <li><i class="fas fa-microchip"></i> 24GB GDDR6X</li>
+                <li><i class="fas fa-tachometer-alt"></i> 2.52 GHz Boost Clock</li>
+                <li><i class="fas fa-plug"></i> 450W TGP</li>
+                <li><i class="fas fa-shield-alt"></i> DLSS 3 Support</li>
+            </ul>
+            <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+        </div>
+    </div>
+
+    <div class="product-card">
+        <img src="gpu2.jpg" alt="NVIDIA GeForce RTX 4070">
+        <h3>NVIDIA GeForce RTX 4070</h3>
+        <ul class="specs-list">
+            <li><i class="fas fa-desktop"></i> 12GB GDDR6X</li>
+            <li><i class="fas fa-tachometer-alt"></i> 2475 MHz Boost</li>
+            <li><i class="fas fa-plug"></i> PCIe 4.0 x16</li>
+            <li><i class="fas fa-fan"></i> Triple-Fan Cooling</li>
+        </ul>
+        <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <img src="gpu3.jpg" alt="AMD Radeon RX 7800 XT">
+        <h3>AMD RX 7800 XT</h3>
+        <ul class="specs-list">
+            <li><i class="fas fa-desktop"></i> 16GB GDDR6</li>
+            <li><i class="fas fa-tachometer-alt"></i> 2250 MHz Game</li>
+            <li><i class="fas fa-memory"></i> 384-bit Bus</li>
+            <li><i class="fas fa-snowflake"></i> Liquid Cooling</li>
+        </ul>
+        <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <img src="gpu4.jpg" alt="NVIDIA GeForce RTX 4080">
+        <h3>NVIDIA GeForce RTX 4080</h3>
+        <ul class="specs-list">
+            <li><i class="fas fa-microchip"></i> 16GB GDDR6X</li>
+            <li><i class="fas fa-tachometer-alt"></i> 2.51 GHz Boost</li>
+            <li><i class="fas fa-plug"></i> 320W TGP</li>
+            <li><i class="fas fa-shield-alt"></i> Ray Tracing 3.0</li>
+        </ul>
+        <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <img src="gpu5.jpg" alt="AMD Radeon RX 7900 XTX">
+        <h3>AMD Radeon RX 7900 XTX</h3>
+        <ul class="specs-list">
+            <li><i class="fas fa-desktop"></i> 24GB GDDR6</li>
+            <li><i class="fas fa-tachometer-alt"></i> 2.5 GHz Game</li>
+            <li><i class="fas fa-memory"></i> 384-bit Bus</li>
+            <li><i class="fas fa-fan"></i> Triple-Fan Design</li>
+        </ul>
+        <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <img src="gpu6.jpg" alt="NVIDIA GeForce RTX 4070 Ti">
+        <h3>NVIDIA GeForce RTX 4070 Ti</h3>
+        <ul class="specs-list">
+            <li><i class="fas fa-microchip"></i> 12GB GDDR6X</li>
+            <li><i class="fas fa-tachometer-alt"></i> 2.61 GHz Boost</li>
+            <li><i class="fas fa-plug"></i> 285W TGP</li>
+            <li><i class="fas fa-shield-alt"></i> DLSS Frame Generation</li>
+        </ul>
+        <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <img src="gpu7.jpg" alt="AMD Radeon RX 7700 XT">
+        <h3>AMD Radeon RX 7700 XT</h3>
+        <ul class="specs-list">
+            <li><i class="fas fa-desktop"></i> 12GB GDDR6</li>
+            <li><i class="fas fa-tachometer-alt"></i> 2.2 GHz Game</li>
+            <li><i class="fas fa-memory"></i> 192-bit Bus</li>
+            <li><i class="fas fa-fan"></i> Dual-Fan Design</li>
+        </ul>
+        <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <img src="gpu8.jpg" alt="NVIDIA GeForce RTX 4060 Ti">
+        <h3>NVIDIA GeForce RTX 4060 Ti</h3>
+        <ul class="specs-list">
+            <li><i class="fas fa-microchip"></i> 8GB GDDR6</li>
+            <li><i class="fas fa-tachometer-alt"></i> 2.54 GHz Boost</li>
+            <li><i class="fas fa-plug"></i> 160W TGP</li>
+            <li><i class="fas fa-shield-alt"></i> AV1 Encode Support</li>
+        </ul>
+        <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <img src="gpu9.jpg" alt="AMD Radeon RX 7600">
+        <h3>AMD Radeon RX 7600</h3>
+        <ul class="specs-list">
+            <li><i class="fas fa-desktop"></i> 8GB GDDR6</li>
+            <li><i class="fas fa-tachometer-alt"></i> 2.25 GHz Game</li>
+            <li><i class="fas fa-memory"></i> 128-bit Bus</li>
+            <li><i class="fas fa-fan"></i> Compact Design</li>
+        </ul>
+        <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <img src="gpu10.jpg" alt="NVIDIA GeForce RTX 4060">
+        <h3>NVIDIA GeForce RTX 4060</h3>
+        <ul class="specs-list">
+            <li><i class="fas fa-microchip"></i> 8GB GDDR6</li>
+            <li><i class="fas fa-tachometer-alt"></i> 2.46 GHz Boost</li>
+            <li><i class="fas fa-plug"></i> 115W TGP</li>
+            <li><i class="fas fa-shield-alt"></i> DLSS 3.5</li>
+        </ul>
+        <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <img src="gpu11.jpg" alt="AMD Radeon RX 6950 XT">
+        <h3>AMD Radeon RX 6950 XT</h3>
+        <ul class="specs-list">
+            <li><i class="fas fa-desktop"></i> 16GB GDDR6</li>
+            <li><i class="fas fa-tachometer-alt"></i> 2.31 GHz Game</li>
+            <li><i class="fas fa-memory"></i> 256-bit Bus</li>
+            <li><i class="fas fa-fan"></i> Premium Cooling</li>
+        </ul>
+        <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <img src="gpu12.jpg" alt="NVIDIA GeForce RTX 3090 Ti">
+        <h3>NVIDIA GeForce RTX 3090 Ti</h3>
+        <ul class="specs-list">
+            <li><i class="fas fa-microchip"></i> 24GB GDDR6X</li>
+            <li><i class="fas fa-tachometer-alt"></i> 1.86 GHz Boost</li>
+            <li><i class="fas fa-plug"></i> 450W TGP</li>
+            <li><i class="fas fa-shield-alt"></i> 2nd Gen RT Cores</li>
+        </ul>
+        <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <img src="gpu13.jpg" alt="AMD Radeon RX 6800 XT">
+        <h3>AMD Radeon RX 6800 XT</h3>
+        <ul class="specs-list">
+            <li><i class="fas fa-desktop"></i> 16GB GDDR6</li>
+            <li><i class="fas fa-tachometer-alt"></i> 2.25 GHz Game</li>
+            <li><i class="fas fa-memory"></i> 256-bit Bus</li>
+            <li><i class="fas fa-fan"></i> Triple-Fan Design</li>
+        </ul>
+        <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <img src="gpu14.jpg" alt="NVIDIA GeForce RTX 3080">
+        <h3>NVIDIA GeForce RTX 3080</h3>
+        <ul class="specs-list">
+            <li><i class="fas fa-microchip"></i> 10GB GDDR6X</li>
+            <li><i class="fas fa-tachometer-alt"></i> 1.71 GHz Boost</li>
+            <li><i class="fas fa-plug"></i> 320W TGP</li>
+            <li><i class="fas fa-shield-alt"></i> DLSS 2.0</li>
+        </ul>
+        <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <img src="gpu15.jpg" alt="AMD Radeon RX 6700 XT">
+        <h3>AMD Radeon RX 6700 XT</h3>
+        <ul class="specs-list">
+            <li><i class="fas fa-desktop"></i> 12GB GDDR6</li>
+            <li><i class="fas fa-tachometer-alt"></i> 2.42 GHz Game</li>
+            <li><i class="fas fa-memory"></i> 192-bit Bus</li>
+            <li><i class="fas fa-fan"></i> Dual-Fan Design</li>
+        </ul>
+        <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <img src="gpu16.jpg" alt="NVIDIA GeForce RTX 4060 Ti 16GB">
+        <h3>NVIDIA RTX 4060 Ti 16GB</h3>
+        <ul class="specs-list">
+            <li><i class="fas fa-microchip"></i> 16GB GDDR6</li>
+            <li><i class="fas fa-tachometer-alt"></i> 2.54 GHz Boost</li>
+            <li><i class="fas fa-plug"></i> 165W TGP</li>
+            <li><i class="fas fa-shield-alt"></i> DLSS 3.5</li>
+        </ul>
+        <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <img src="gpu17.jpg" alt="AMD Radeon RX 7600 XT">
+        <h3>AMD Radeon RX 7600 XT</h3>
+        <ul class="specs-list">
+            <li><i class="fas fa-desktop"></i> 16GB GDDR6</li>
+            <li><i class="fas fa-tachometer-alt"></i> 2.76 GHz Game</li>
+            <li><i class="fas fa-memory"></i> 128-bit Bus</li>
+            <li><i class="fas fa-fan"></i> Triple-Fan Design</li>
+        </ul>
+        <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <img src="gpu18.jpg" alt="NVIDIA GeForce RTX 3080 Ti">
+        <h3>NVIDIA RTX 3080 Ti</h3>
+        <ul class="specs-list">
+            <li><i class="fas fa-microchip"></i> 12GB GDDR6X</li>
+            <li><i class="fas fa-tachometer-alt"></i> 1.67 GHz Boost</li>
+            <li><i class="fas fa-plug"></i> 350W TGP</li>
+            <li><i class="fas fa-shield-alt"></i> Ray Tracing 2.0</li>
+        </ul>
+        <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <img src="gpu19.jpg" alt="AMD Radeon RX 6800">
+        <h3>AMD Radeon RX 6800</h3>
+        <ul class="specs-list">
+            <li><i class="fas fa-desktop"></i> 16GB GDDR6</li>
+            <li><i class="fas fa-tachometer-alt"></i> 2.1 GHz Game</li>
+            <li><i class="fas fa-memory"></i> 256-bit Bus</li>
+            <li><i class="fas fa-fan"></i> Triple-Fan Design</li>
+        </ul>
+        <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <img src="gpu20.jpg" alt="NVIDIA GeForce RTX 3070">
+        <h3>NVIDIA RTX 3070</h3>
+        <ul class="specs-list">
+            <li><i class="fas fa-microchip"></i> 8GB GDDR6</li>
+            <li><i class="fas fa-tachometer-alt"></i> 1.73 GHz Boost</li>
+            <li><i class="fas fa-plug"></i> 220W TGP</li>
+            <li><i class="fas fa-shield-alt"></i> DLSS 2.0</li>
+        </ul>
+        <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <img src="gpu21.jpg" alt="AMD Radeon RX 6700">
+        <h3>AMD Radeon RX 6700</h3>
+        <ul class="specs-list">
+            <li><i class="fas fa-desktop"></i> 10GB GDDR6</li>
+            <li><i class="fas fa-tachometer-alt"></i> 2.2 GHz Game</li>
+            <li><i class="fas fa-memory"></i> 160-bit Bus</li>
+            <li><i class="fas fa-fan"></i> Dual-Fan Design</li>
+        </ul>
+        <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <img src="gpu22.jpg" alt="NVIDIA GeForce RTX 3060 Ti">
+        <h3>NVIDIA RTX 3060 Ti</h3>
+        <ul class="specs-list">
+            <li><i class="fas fa-microchip"></i> 8GB GDDR6</li>
+            <li><i class="fas fa-tachometer-alt"></i> 1.67 GHz Boost</li>
+            <li><i class="fas fa-plug"></i> 200W TGP</li>
+            <li><i class="fas fa-shield-alt"></i> Ray Tracing 2.0</li>
+        </ul>
+        <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <img src="gpu23.jpg" alt="AMD Radeon RX 6600 XT">
+        <h3>AMD Radeon RX 6600 XT</h3>
+        <ul class="specs-list">
+            <li><i class="fas fa-desktop"></i> 8GB GDDR6</li>
+            <li><i class="fas fa-tachometer-alt"></i> 2.59 GHz Game</li>
+            <li><i class="fas fa-memory"></i> 128-bit Bus</li>
+            <li><i class="fas fa-fan"></i> Dual-Fan Design</li>
+        </ul>
+        <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <img src="gpu24.jpg" alt="NVIDIA GeForce RTX 3060">
+        <h3>NVIDIA RTX 3060</h3>
+        <ul class="specs-list">
+            <li><i class="fas fa-microchip"></i> 12GB GDDR6</li>
+            <li><i class="fas fa-tachometer-alt"></i> 1.78 GHz Boost</li>
+            <li><i class="fas fa-plug"></i> 170W TGP</li>
+            <li><i class="fas fa-shield-alt"></i> DLSS 2.0</li>
+        </ul>
+        <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <img src="gpu25.jpg" alt="AMD Radeon RX 6600">
+        <h3>AMD Radeon RX 6600</h3>
+        <ul class="specs-list">
+            <li><i class="fas fa-desktop"></i> 8GB GDDR6</li>
+            <li><i class="fas fa-tachometer-alt"></i> 2.49 GHz Game</li>
+            <li><i class="fas fa-memory"></i> 128-bit Bus</li>
+            <li><i class="fas fa-fan"></i> Dual-Fan Design</li>
+        </ul>
+        <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <img src="gpu26.jpg" alt="NVIDIA GeForce GTX 1660 Super">
+        <h3>NVIDIA GTX 1660 Super</h3>
+        <ul class="specs-list">
+            <li><i class="fas fa-microchip"></i> 6GB GDDR6</li>
+            <li><i class="fas fa-tachometer-alt"></i> 1.83 GHz Boost</li>
+            <li><i class="fas fa-plug"></i> 125W TGP</li>
+            <li><i class="fas fa-fan"></i> Dual-Fan Design</li>
+        </ul>
+        <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <img src="gpu27.jpg" alt="AMD Radeon RX 6500 XT">
+        <h3>AMD Radeon RX 6500 XT</h3>
+        <ul class="specs-list">
+            <li><i class="fas fa-desktop"></i> 4GB GDDR6</li>
+            <li><i class="fas fa-tachometer-alt"></i> 2.82 GHz Game</li>
+            <li><i class="fas fa-memory"></i> 64-bit Bus</li>
+            <li><i class="fas fa-fan"></i> Single-Fan Design</li>
+        </ul>
+        <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <img src="gpu28.jpg" alt="NVIDIA GeForce GTX 1650 Super">
+        <h3>NVIDIA GTX 1650 Super</h3>
+        <ul class="specs-list">
+            <li><i class="fas fa-microchip"></i> 4GB GDDR6</li>
+            <li><i class="fas fa-tachometer-alt"></i> 1.73 GHz Boost</li>
+            <li><i class="fas fa-plug"></i> 100W TGP</li>
+            <li><i class="fas fa-fan"></i> Dual-Fan Design</li>
+        </ul>
+        <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <img src="gpu29.jpg" alt="AMD Radeon RX 6400">
+        <h3>AMD Radeon RX 6400</h3>
+        <ul class="specs-list">
+            <li><i class="fas fa-desktop"></i> 4GB GDDR6</li>
+            <li><i class="fas fa-tachometer-alt"></i> 2.32 GHz Game</li>
+            <li><i class="fas fa-memory"></i> 64-bit Bus</li>
+            <li><i class="fas fa-fan"></i> Low-Profile Design</li>
+        </ul>
+        <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+    </div>
+
+    <div class="product-card">
+        <img src="gpu30.jpg" alt="NVIDIA GeForce GTX 1630">
+        <h3>NVIDIA GeForce GTX 1630</h3>
+        <ul class="specs-list">
+            <li><i class="fas fa-microchip"></i> 4GB GDDR6</li>
+            <li><i class="fas fa-tachometer-alt"></i> 1.79 GHz Boost</li>
+            <li><i class="fas fa-plug"></i> 75W TGP</li>
+            <li><i class="fas fa-fan"></i> Single-Fan Design</li>
+        </ul>
+        <button class="add-to-cart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+    </div>
+    </div>
+</div>
+        </div>
+
+</body>
+<script src="js/search.js"></script>
+</html>

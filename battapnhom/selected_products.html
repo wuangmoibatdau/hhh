@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Selected PC Builds - TechComponents</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/baitapnhom.css">
+    <link rel="stylesheet" href="css/products.css">
+    <link rel="stylesheet" href="css/build.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .build-item {
+            background: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .build-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .build-components {
+            margin-bottom: 15px;
+        }
+
+        .component-detail {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 8px 0;
+            border-bottom: 1px solid #f5f5f5;
+        }
+
+        .component-name {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .component-value {
+            color: #666;
+            flex-grow: 1;
+            margin: 0 20px;
+        }
+
+        .component-price {
+            color: #e44d26;
+            font-weight: bold;
+        }
+
+        .build-actions {
+            display: flex;
+            gap: 10px;
+            justify-content: flex-end;
+        }
+
+        .build-actions button {
+            padding: 8px 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .remove-build {
+            background: #ff4444;
+            color: white;
+        }
+
+        .checkout-build {
+            background: #4CAF50;
+            color: white;
+        }
+
+        .build-actions button:hover {
+            opacity: 0.9;
+            transform: translateY(-2px);
+        }
+
+        .empty-message {
+            text-align: center;
+            padding: 40px;
+            color: #666;
+            font-size: 1.2em;
+        }
+
+        .error-message {
+            text-align: center;
+            padding: 40px;
+            color: #ff4444;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <div id="waper">
+        <div id="header">
+            <nav class="thanhmenu">
+                <div class="thanhtren">
+                    <a id="logo" href="baitapnhom.html">
+                        <img src="images/1.jpg" alt="TechComponents Logo">
+                    </a>
+                    <input type="text" id="thanhtimkiem" placeholder="Tìm kiếm linh kiện...">
+                    <div class="tra_cuu">
+                        <a href="#news"><i class="fas fa-newspaper"></i> Tin tức</a>
+                        <a href="checkout.html"><i class="fas fa-box-open"></i> Thanh toán</a>
+                        <a href="#about"><i class="fas fa-info-circle"></i> Giới thiệu</a>
+                    </div>
+                    <div class="dangnhap">
+                        <a href="cart.html"><button><i class="fas fa-shopping-cart"></i> Giỏ hàng</button></a>
+                    </div>
+                    <div class="dangnhap">
+                        <a href="login.html"><button><i class="fas fa-user"></i> Đăng Nhập</button></a>
+                    </div>
+                </div>
+                <ul id="main_menu">
+                    <li><a href="processors.html">Bộ Vi Xử Lý <i class="fas fa-microchip"></i></a></li>
+                    <li><a href="graphics.html">Card Đồ Họa <i class="fas fa-desktop"></i></a></li>
+                    <li><a href="memory.html">Bộ Nhớ RAM <i class="fas fa-memory"></i></a></li>
+                    <li><a href="storage.html">Ổ Cứng <i class="fas fa-hdd"></i></a></li>
+                    <li><a href="motherboards.html">Bo Mạch Chủ <i class="fas fa-server"></i></a></li>
+                    <li><a href="power-supply.html">Nguồn Máy Tính <i class="fas fa-plug"></i></a></li>
+                    <li><a href="cases.html">Vỏ Case <i class="fas fa-box"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="container">
+            <h1>PC Builds của bạn</h1>
+            <div id="selected-products-list">
+                <!-- Builds will be displayed here -->
+            </div>
+        </div>
+    </div>
+    <script src="js/selected-products.js"></script>
+</body>
+</html>

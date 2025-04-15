@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanh toán - PC Builder</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/baitapnhom.css">
+    <link rel="stylesheet" href="css/checkout.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div id="waper">
+        <div id="header">
+            <nav class="thanhmenu">
+                <div class="thanhtren">
+                    <a id="logo" href="baitapnhom.html">
+                        <img src="images/1.jpg" alt="Logo TechComponents">
+                    </a>
+                    <input type="text" id="thanhtimkiem" placeholder="Tìm kiếm linh kiện...">
+                    <div class="tra_cuu">
+                        <a href="#news"><i class="fas fa-newspaper"></i> Tin tức</a>
+                        <a href="checkout.html"><i class="fas fa-box-open"></i> Thanh toán</a>
+                        <a href="#about"><i class="fas fa-info-circle"></i> Giới thiệu</a>
+                    </div>
+                    <div class="dangnhap">
+                        <a href="cart.html"><button><i class="fas fa-shopping-cart"></i> Giỏ hàng</button></a>
+                    </div>
+                    <div class="dangnhap">
+                        <a href="login.html"><button><i class="fas fa-user"></i> Đăng Nhập</button></a>
+                    </div>
+                </div>
+                <ul id="main_menu">
+                    <li><a href="processors.html">Bộ Vi Xử Lý <i class="fas fa-microchip"></i></a></li>
+                    <li><a href="graphics.html">Card Đồ Họa <i class="fas fa-desktop"></i></a></li>
+                    <li><a href="memory.html">Bộ Nhớ RAM <i class="fas fa-memory"></i></a></li>
+                    <li><a href="storage.html">Ổ Cứng <i class="fas fa-hdd"></i></a></li>
+                    <li><a href="motherboards.html">Bo Mạch Chủ <i class="fas fa-server"></i></a></li>
+                    <li><a href="power-supply.html">Nguồn Máy Tính <i class="fas fa-plug"></i></a></li>
+                    <li><a href="cases.html">Vỏ Case <i class="fas fa-box"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <main class="checkout-container">
+            <div class="checkout-progress">
+                <div class="progress-step active">
+                    <i class="fas fa-user"></i>
+                    <span>Thông tin</span>
+                </div>
+                <div class="progress-step">
+                    <i class="fas fa-truck"></i>
+                    <span>Vận chuyển</span>
+                </div>
+                <div class="progress-step">
+                    <i class="fas fa-credit-card"></i>
+                    <span>Thanh toán</span>
+                </div>
+            </div>
+            
+            <div class="checkout-content">
+                <div class="checkout-form">
+                    <section class="billing-info">
+                        <h2>Thông tin thanh toán</h2>
+                        <form id="billing-form">
+                            <div class="form-group">
+                                <label for="fullname">Họ và tên</label>
+                                <input type="text" id="fullname" name="fullname" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Số điện thoại</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="address">Địa chỉ</label>
+                                <textarea id="address" name="address" required></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="note">Ghi chú đơn hàng</label>
+                                <textarea id="note" name="note" placeholder="Ghi chú về đơn hàng của bạn (tùy chọn)"></textarea>
+                            </div>
+                        </form>
+                    </section>
+
+                    <section class="payment-method">
+                        <h2>Phương thức thanh toán</h2>
+                        <div class="payment-options">
+                            <div class="payment-option">
+                                <input type="radio" id="bank-transfer" name="payment" value="bank-transfer">
+                                <label for="bank-transfer" class="payment-label">
+                                    <i class="fas fa-university"></i>
+                                    <div class="payment-info">
+                                        <span class="payment-title">Chuyển khoản ngân hàng</span>
+                                        <span class="payment-desc">Chuyển khoản qua ngân hàng nội địa</span>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="payment-option">
+                                <input type="radio" id="cod" name="payment" value="cod">
+                                <label for="cod" class="payment-label">
+                                    <i class="fas fa-money-bill-wave"></i>
+                                    <div class="payment-info">
+                                        <span class="payment-title">Thanh toán khi nhận hàng</span>
+                                        <span class="payment-desc">Thanh toán bằng tiền mặt khi nhận hàng</span>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="order-summary">
+                    <h2>Tổng kết đơn hàng</h2>
+                    <div class="order-items">
+                    </div>
+                    <div class="order-totals">
+                        <div class="subtotal">
+                            <span>Tạm tính:</span>
+                            <span>$0.00</span>
+                        </div>
+                        <div class="shipping">
+                            <span>Phí vận chuyển:</span>
+                            <span>$0.00</span>
+                        </div>
+                        <div class="discount">
+                            <span>Giảm giá:</span>
+                            <span>$0.00</span>
+                        </div>
+                        <div class="total">
+                            <span>Tổng cộng:</span>
+                            <span>$0.00</span>
+                        </div>
+                    </div>
+                    <div class="coupon-section">
+                        <input type="text" id="coupon-code" placeholder="Nhập mã giảm giá">
+                        <button id="apply-coupon">Áp dụng</button>
+                    </div>
+                    <button id="place-order" class="place-order-btn">Đặt hàng</button>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Nhóm chúng tôi</h3>
+                    <p>Liên Duy Quang</p>
+                    <p>Lê Thành Tài</p>
+                    <p>Lê Văn Thiện</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="js/checkout.js"></script>
+    <script src="js/search.js"></script>
+</body>
+</html>

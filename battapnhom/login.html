@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập - TechComponents</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/baitapnhom.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div id="waper">
+        <div id="header">
+            <nav class="thanhmenu">
+                <div class="thanhtren">
+                    <a id="logo" href="baitapnhom.html">
+                        <img src="images/1.jpg" alt="Logo TechComponents">
+                    </a>
+                    <input type="text" id="thanhtimkiem" placeholder="Tìm kiếm linh kiện...">
+                    <div class="tra_cuu">
+                        <a href="#news"><i class="fas fa-newspaper"></i> Tin tức</a>
+                        <a href="checkout.html"><i class="fas fa-box-open"></i> Thanh toán</a>
+                        <a href="#about"><i class="fas fa-info-circle"></i> Giới thiệu</a>
+                    </div>
+                    <div class="dangnhap">
+                        <a href="cart.html"><button><i class="fas fa-shopping-cart"></i> Giỏ hàng</button></a>
+                    </div>
+                    <div class="dangnhap">
+                        <a href="login.html"><button><i class="fas fa-user"></i> Đăng Nhập</button></a>
+                    </div>
+                </div>
+                <ul id="main_menu">
+                    <li><a href="processors.html">Bộ Vi Xử Lý <i class="fas fa-microchip"></i></a></li>
+                    <li><a href="graphics.html">Card Đồ Họa <i class="fas fa-desktop"></i></a></li>
+                    <li><a href="memory.html">Bộ Nhớ RAM <i class="fas fa-memory"></i></a></li>
+                    <li><a href="storage.html">Ổ Cứng <i class="fas fa-hdd"></i></a></li>
+                    <li><a href="motherboards.html">Bo Mạch Chủ <i class="fas fa-server"></i></a></li>
+                    <li><a href="power-supply.html">Nguồn Máy Tính <i class="fas fa-plug"></i></a></li>
+                    <li><a href="cases.html">Vỏ Case <i class="fas fa-box"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="auth-container">
+            <div class="auth-box">
+                <div class="auth-tabs">
+                    <button class="auth-tab active" data-tab="login">Đăng nhập</button>
+                    <button class="auth-tab" data-tab="register">Đăng ký</button>
+                </div>
+
+                <div class="auth-form active" id="login-form">
+                    <h2>Chào mừng trở lại</h2>
+                    <p>Đăng nhập để tiếp tục mua sắm</p>
+
+                    <form action="#" method="POST" class="login-form">
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="password">Mật khẩu</label>
+                            <div class="password-input">
+                                <input type="password" id="password" name="password" required>
+                                <i class="fas fa-eye-slash toggle-password"></i>
+                            </div>
+                        </div>
+
+                        <div class="form-options">
+                            <label class="remember-me">
+                                <input type="checkbox" name="remember">
+                                <span>Ghi nhớ đăng nhập</span>
+                            </label>
+                        </div>
+
+                        <button type="submit" class="auth-button">Đăng nhập</button>
+                    </form>
+                </div>
+
+                <div class="auth-form" id="register-form">
+                    <h2>Tạo tài khoản</h2>
+                    <p>Đăng ký để mua sắm linh kiện tốt nhất</p>
+
+                    <form action="#" method="POST" class="register-form">
+                        <div class="form-group">
+                            <label for="reg-name">Họ và tên</label>
+                            <input type="text" id="reg-name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="reg-email">Email</label>
+                            <input type="email" id="reg-email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="reg-password">Mật khẩu</label>
+                            <div class="password-input">
+                                <input type="password" id="reg-password" name="password" required>
+                                <i class="fas fa-eye-slash toggle-password"></i>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="confirm-password">Xác nhận mật khẩu</label>
+                            <div class="password-input">
+                                <input type="password" id="confirm-password" name="confirm-password" required>
+                                <i class="fas fa-eye-slash toggle-password"></i>
+                            </div><br>
+                            <button type="reset">Điền lại thông tin</button>
+                        </div>
+                        <div class="form-options">
+                        </div>
+                        <button type="submit" class="auth-button">Đăng ký</button>  
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/auth.js" defer></script>
+    <script src="js/search.js" defer></script>
+
+</body>
+</html>
